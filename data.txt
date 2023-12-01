@@ -1,0 +1,60 @@
+account no 1: 
+48291
+password for account no 1:
+327
+account balance for account no 1:
+4560.53
+account no 2:
+75904
+password for account no 2:
+548
+account balance for account no 2:
+8290.34
+account no 3:
+12345
+password for account no 3:
+176
+account balance for account no 3:
+48054.50
+account no 4:
+87653
+password for account no 4:
+892
+account balance for account no 4:
+92000.00
+account no 5:
+23456
+password for account no 5:
+431
+account balance for account no 5:
+13500.05
+account no 6:
+98765
+password for account no 6:
+609
+account balance for account no 6:
+1500.65
+account no 7:
+54321
+password for account no 7:
+254
+account balance for account no 7:
+2500.25
+acc no 8:
+60572
+password for account no 8:
+783
+account balance for account no 8:
+10050.93
+account no 9:
+31948
+password for account no 9:
+565
+account balance for account no 9:
+28000.24
+account no 10:
+89012
+password for account no 10:
+998
+account balance for account no 10:
+37500.72
