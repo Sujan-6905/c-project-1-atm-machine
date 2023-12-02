@@ -1,4 +1,6 @@
 // Student name: Sujan P Registration number: 23cs230
+// the account number and passwords are present inside data.txt file
+
 #include <iostream>
 #include <fstream>
 class Atm
@@ -182,7 +184,7 @@ int main()
                         }
                         std::cout << "Available notes " << avail_notes << std::endl;
                         double max_withdraw = (obj.checkbal() - 100 <= 10000) ? obj.checkbal() : 10000;
-                        std::cout << "Please enter an amount less than " << max_withdraw << " to withdraw: " << std::endl;
+                        std::cout << "Please enter an amount less than or equal to " << max_withdraw << " to withdraw: " << std::endl;
                         getline(std::cin, b);
                         inp_amount = checkNum(b);
                         while (inp_amount < 100 || inp_amount > 10000 || inp_amount % 100 != 0 || inp_amount > obj.accbal - 100)
@@ -239,7 +241,7 @@ int main()
                         }
                         std::cout << "Accepted notes to deposit " << accept_notes << std::endl;
                         double max_deposit = (100000 - obj.checkbal() <= 10000) ? 100000 - obj.checkbal() : 10000;
-                        std::cout << "Please enter an amount less than " << max_deposit << " to deposit: " << std::endl;
+                        std::cout << "Please enter an amount less than or equal to " << max_deposit << " to deposit: " << std::endl;
                         getline(std::cin, b);
                         inp_amount = checkNum(b);
 
