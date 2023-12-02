@@ -1,4 +1,4 @@
-// Student name: Sujan P Registration number: 23cs230
+// Student name: Sujan P Registration number: 23CS227
 // the account number and passwords are present inside data.txt file
 
 #include <iostream>
@@ -67,7 +67,7 @@ int checkNum(std::string n)
 
 int main()
 {
-    std::cout << "Student name: Sujan P, Registration number: 23CS 230" << std::endl;
+    std::cout << "Student name: Sujan P, Registration number: 23CS227" << std::endl;
     std::string a, b;
     std::string acc_no, pass;
     int option, inp_amount, acc_index, pass_trycount = 1, acc_number_trycount = 1;
