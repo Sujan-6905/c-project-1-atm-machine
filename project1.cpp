@@ -225,7 +225,7 @@ int main()
                 else if (option == 2)
                 {
                     std::string accept_notes;
-                    if (obj.checkbal() >= 99900)
+                    if (obj.checkbal() > 99900)
                     {
                         std::cout << "cannot deposit money as your balance will exceed the limit 100000" << std::endl;
                     }
@@ -245,7 +245,7 @@ int main()
                         getline(std::cin, b);
                         inp_amount = checkNum(b);
 
-                        while (inp_amount < 100 || inp_amount > 10000 || inp_amount % 100 != 0 || inp_amount + obj.checkbal() >= 100000)
+                        while (inp_amount < 100 || inp_amount > 10000 || inp_amount % 100 != 0 || inp_amount + obj.checkbal() > 100000)
                         {
 
                             // different reasons for why the transaction failed
@@ -254,7 +254,7 @@ int main()
                                 std::cout << "Cannot deposit more than 10000 in a single transaction" << std::endl
                                           << "Please enter a valid amount: " << std::endl;
                             }
-                            else if (inp_amount + obj.checkbal() >= 100000)
+                            else if (inp_amount + obj.checkbal() > 100000)
                             {
                                 std::cout << "cannot deposit this amount of money as your balance will exceed 100000" << std::endl
                                           << "Please enter a valid amount: " << std::endl;
