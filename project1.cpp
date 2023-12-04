@@ -183,7 +183,7 @@ int main()
                             avail_notes = "100 and 500 ";
                         }
                         std::cout << "Available notes " << avail_notes << std::endl;
-                        double max_withdraw = (obj.checkbal() - 100 <= 10000) ? obj.checkbal() : 10000;
+                        double max_withdraw = (obj.checkbal() - 100 <= 10000) ? obj.checkbal() - 100 : 10000;
                         std::cout << "Please enter an amount less than or equal to " << max_withdraw << " to withdraw: " << std::endl;
                         getline(std::cin, b);
                         inp_amount = checkNum(b);
